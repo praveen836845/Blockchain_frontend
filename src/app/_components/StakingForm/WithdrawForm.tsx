@@ -36,7 +36,7 @@ const WithdrawForm = () => {
 
             // Call the withdraw function from the contract
             const tx = await contract.withdraw(tokens);
-            console.log("checking why this is happening" , tx);
+            console.log("checking why this is happening" , tokens);
 
             // Wait for the transaction to be mined
             await tx.wait();
