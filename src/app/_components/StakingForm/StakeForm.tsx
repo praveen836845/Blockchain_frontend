@@ -6,7 +6,14 @@ import { FormEvent, useCallback, useState } from 'react';
 import { ethers } from "ethers";
 import StakedBTCABI from '../../../blockchain/config/ABI.json'; // Adjust the import path as needed
 
-const CONTRACT_ADDRESS = '0xCd1B7882fF50772D772995120e8c0f1b4c84fBd4'; // Replace with your actual contract address
+const CONTRACT_ADDRESS = '0xCd1B7882fF50772D772995120e8c0f1b4c84fBd4'; // Replace with your actual contract address 
+
+declare global {
+    interface Window {
+      ethereum: any;
+    }
+  }
+
 
 const StakeForm = () => {
     const { isConnected } = useAccount();
