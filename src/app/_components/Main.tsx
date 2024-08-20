@@ -12,7 +12,7 @@ const Main = () => {
         <div className="flex items-center justify-center text-center sm:h-full sm:flex-1 sm:justify-start sm:text-start">
           <div className="">
             <h2 className="text-xl font-semibold md:text-3xl">Stake your WBTC token and earn Rewards</h2>
-            <p className="text-sm md:text-lg">You can earn rewards upto 1% APY.</p>
+            <p className="text-sm md:text-lg">You can earn rewards upto 8% APY.</p>
             <p className="text-sm md:text-lg">Your tokens and rewards will be returned once the time ends.</p>
           </div>
         </div>

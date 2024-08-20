@@ -48,11 +48,11 @@ const StakingSection = () => {
             </div>
             <div className='w-[200px] rounded-md bg-white p-3'>
               <h4>APY:</h4>
-              <p>1%</p>
+              <p>8%</p>
             </div>
             <div className='w-[200px] rounded-md bg-white p-3'>
-              <h4>Ending in:</h4>
-              <p>{`${time.split(':')[0]}d ${time.split(':')[1]}h ${time.split(':')[2]}mins ${time.split(':')[3]}s`}</p>
+              <h4>Unbonding Period:</h4>
+              <p>2 days</p>
             </div>
           </div>
         </div>
