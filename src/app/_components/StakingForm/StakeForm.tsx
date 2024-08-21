@@ -9,10 +9,10 @@ import StakedBTCABI from '../../../blockchain/config/ABI.json'; // Adjust the im
 const CONTRACT_ADDRESS = '0xCd1B7882fF50772D772995120e8c0f1b4c84fBd4'; // Replace with your actual contract address 
 
 declare global {
-    interface Window {
-      ethereum: any;
-    }
+  interface Window {
+    ethereum: any;
   }
+}
 
 
 const StakeForm = () => {
@@ -90,7 +90,7 @@ const StakeForm = () => {
             // const tokenAmount = ethers.utils.parseUnits(tokens, 18);
 
             // Call the stake function with the appropriate token amount
-            const tx = await contract.stake(ethers.utils.parseEther(tokens.toString()));
+            const tx = await contract.stake(tokens);
 
             await tx.wait(); // Wait for the transaction to be mined
             console.log("Tokens staked successfully!");
@@ -122,7 +122,7 @@ const StakeForm = () => {
             // const tokenAmount = ethers.utils.parseUnits(tokens, 18);
 
             // Call the stake function with the appropriate token amount
-            const tx = await contract.unstake(ethers.utils.parseEther(tokens.toString()));
+            const tx = await contract.unstake(tokens);
 
             await tx.wait(); // Wait for the transaction to be mined
             console.log("Tokens unstaked successfully!");
